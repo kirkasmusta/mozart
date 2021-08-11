@@ -1,7 +1,48 @@
-li{
-    margin-left: 40px;
+.box {
+    display: flex;
+    justify-content: center;
 }
-ol,ul{
-    padding-inline-start: 0pt;
+.box div {
+    width: 60vw;
+    height: 7vh;
+    background-color: green;
 }
-
+.road {
+    display: flex;
+    justify-content: space-around;
+}
+.road div {
+    width: 45vw;
+    height: 15vh;
+    background-color: rgb(114, 202, 96);
+}
+.three {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+.three div {
+    width: 31vw;
+    height: 18vh;
+    background-color: red;
+}
+.blue div {
+    width: 31vw;
+    height: 18vh;
+    background-color: blue;
+}
+.yellow div {
+    width: 31vw;
+    height: 18vh;
+    background-color: yellow;
+}
+.grey {
+    display: flex;
+    justify-content: center;
+}
+.grey div {
+    width: 100vw;
+    height: 7vh;
+    background-color: grey;
+    margin: 10px;
+}
