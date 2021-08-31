@@ -4,53 +4,68 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rabit</title>
   <link rel="stylesheet" href="./main.scss">
+  <title>Rabbit</title>
+  <script src="./js/main.js" defer="/script"></script>
 </head>
 <body>
-  <div class="container">
-    <div class="header">
-      <div class="logo">
-        <div class="rabit">
-          <img src="./img/logo.PNG" alt="logo">
+  <div class="page-container">
+    <header class="page-header">
+      <div class="container">
+        <div class="header_items">
+          <div class="logo">
+            <div>
+              <a href=""><img src="https://st2.depositphotos.com/1015581/7905/i/600/depositphotos_79050030-stock-photo-sitting-rabbit-with-carrot.jpg" class="logo_img"></a>
+            </div>
+            <div class="logo_txt">
+              <div class="orange">Orange</div>
+              <div class="rabbit">Rabbit</div>
+            </div>
+          </div>
+          <div class="menu">
+            <nav>
+              <ul class="menu-list">
+                  <li><a href=""><img class="menu-item" src="data:image/png;base64,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"><p>home</p></a></li>
+                  <li><a href=""><img class="menu-item" src="https://svgsilh.com/svg_v2/1345871.svg"><p>about</p></a></li>
+                  <li><a href=""><img class="menu-item" src="https://static9.depositphotos.com/1589661/1133/v/600/depositphotos_11336157-stock-illustration-writing-pen-clean-black-icon.jpg"><p>work</p></a></li>
+                  <li><a href=""><img class="menu-item" src="https://thumbs.dreamstime.com/b/%D0%B7%D0%BD%D0%B0%D1%87%D0%BE%D0%BA-%D0%B3%D0%BB%D0%BE%D0%B1%D1%83%D1%81%D0%B0-%D1%81%D0%B8%D0%BC%D0%B2%D0%BE%D0%BB-%D0%BC%D0%B8%D1%80%D0%B0-%D0%BE%D0%B2%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9-%D0%B3%D0%BB%D0%BE%D0%B1%D1%83%D1%81-%D0%BC%D0%B8%D1%80-%D0%B7%D0%BD%D0%B0%D1%87%D0%BA%D0%B0-%D0%B7%D0%BD%D0%B0%D0%BA-%D0%B7%D0%B5%D0%BC%D0%BB%D0%B8-%D1%86%D0%B2%D0%B5%D1%82-140554230.jpg"><p>blog</p></a></li>
+                  <li><a href=""><img class="menu-item" src="https://w7.pngwing.com/pngs/926/59/png-transparent-gmail-outlook-com-email-google-account-computer-icons-gmail-angle-logo-email-client-thumbnail.png"><p>contact</p></a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
-        <div class="name">
-          <div>orange</div>
-          <div>rabbit</div>
-        </div>
-      </div>  
-      <div class="main">
-        <div class="icon">
-          <img src="./img/home.PNG" alt="home">
-          <span>home</span>
-        </div>
-        <div class="icon">
-          <img src="./img/about.PNG" alt="about">
-          <span>about</span>
-        </div>
-        <div class="icon">
-          <img src="./img/work.PNG" alt="work">
-          <span>work</span>
-        </div>
-        <div class="icon">
-          <img src="./img/blog.PNG" alt="blog">
-          <span>blog</span>
-        </div>
-        <div class="icon">
-          <img src="./img/contact.PNG" alt="contact">
-          <span>contact</span>
+      </div>
+    </header>
+    <div class="section-with-background">
+      <div class="container">
+        <div class="slogan">
+          <div class="slogan-1">do you like rabbits?</div>
+          <div class="slogan-2">do you like oranges?</div>
         </div>
       </div>
     </div>
-  </div>  
-    <div class="fon">
-    </div class="clearfix"> </div>
-
+    <div class="data-input-section">
+      <div class="container">
+        <h2>Send us a message...</h2>
+        <div class="section-forma">
+          <div class="field">
+              <div class="field-name">Name:</div>
+              <div class="field-input"><input type="text"></div>
+          </div>
+          <div class="field">
+              <div class="field-name">Email:</div>
+              <div class="field-input"><input type="text"></div>
+          </div>
+          <div class="field">
+              <div class="field-name">Message:</div>
+              <div class="field-input"><input type="text"></div>
+          </div>
+        </div>
+        <div class="submit-button">
+          <button>Submit</button>
+        </div>
+      </div>
     </div>
-
-
-
-
   </div>
 </body>
 </html>
