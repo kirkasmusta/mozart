@@ -1,5 +1,43 @@
-.two {
-  width: 150px;
-  height: 150px;
-  background-color: hotpink;
+.modal {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(83, 81, 83, 0.4);
+	top: 0;
+	left: 0;
+}
+
+.modal-body {
+	min-height: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.modal-content {
+	background-color: rgb(255, 255, 255);
+	width: 400px;
+	height: 200px;
+	position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+}
+
+.close {
+  color: rgba(0, 0, 0, 1);
+  font-size: 20px;
+  border-radius: 50%;
+  border: rgb(255, 255, 255);
+}
+
+.close:active {
+  top: 1px;
+  right: 1px;
+  position: relative;
 }
