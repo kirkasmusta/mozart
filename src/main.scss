@@ -1,5 +1,16 @@
 body * {
   outline: 1px solid lightgrey;
+  font-family: Yellowtail;
 }
 
+@font-face {
+	font-family: yellowtail;
+	src: url('/src/fonts/Yellowtail-Regular.ttf')
 
+}
+
+.bg-pets {
+	width: 900px;
+	height: 1740px;
+	background: url('../src/img/css_sprites.png') -10px -10px;
+}
