@@ -1,19 +1,27 @@
+.sprite {
+    background-image: url(../img/css_sprites.png);
+}
+
 .bg-pet {
-    width: 512px; height: 512px;
-    background: url('css_sprites.png') -10px -10px;
+    width: 512px; 
+    height: 512px;
+    background-position: -10px -10px;
 }
 
 .bg-pet2 {
-    width: 256px; height: 256px;
-    background: url('css_sprites.png') -542px -10px;
+    width: 256px; 
+    height: 256px;
+    background-position: -542px -10px;
 }
 
 .bg-pet3 {
-    width: 200px; height: 200px;
-    background: url('css_sprites.png') -542px -286px;
+    width: 200px; 
+    height: 200px;
+    background-position: -542px -286px;
 }
 
 .bg-pet4 {
-    width: 200px; height: 200px;
-    background: url('css_sprites.png') -10px -542px;
+    width: 200px; 
+    height: 200px;
+    background-position: -10px -542px;
 }
