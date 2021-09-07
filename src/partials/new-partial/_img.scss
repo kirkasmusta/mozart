@@ -1,19 +1,21 @@
 .menu-item {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     padding: 0 5px;
     border: 1px solid red;
+    align-items: center;
+    justify-content: center;
 }
 
-.menu-item__img {
-    max-height: 50px;
+.menu-item_img {
     max-width: 50px;
+    max-height: 50px;
     padding-bottom: 5px;
 }
 
-.menu-item__caption {
+.menu-item_caption {
     font-size: 17px;
     color: lightgrey;
 }
+
+

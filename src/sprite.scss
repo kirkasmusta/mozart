@@ -1,27 +1,33 @@
 .sprite {
-    background-image: url(../img/css_sprites.png);
+    background-image: url(../img/forrabbit.png);
 }
 
-.bg-pet {
+.bg-glob {
     width: 512px; 
     height: 512px;
+    background-position: -10px -656px;
+}
+
+.bg-home {
+    width: 626px; 
+    height: 555px;
+    background-position: -656px -10px;
+}
+
+.bg-info {
+    width: 626px; 
+    height: 626px;
     background-position: -10px -10px;
 }
 
-.bg-pet2 {
-    width: 256px; 
-    height: 256px;
-    background-position: -542px -10px;
+.bg-mail {
+    width: 512px; 
+    height: 512px;
+    background-position: -542px -656px;
 }
 
-.bg-pet3 {
-    width: 200px; 
-    height: 200px;
-    background-position: -542px -286px;
-}
-
-.bg-pet4 {
-    width: 200px; 
-    height: 200px;
-    background-position: -10px -542px;
+.bg-pen {
+    width: 512px; 
+    height: 512px;
+    background-position: -1302px -10px;
 }

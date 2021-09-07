@@ -1,16 +1,16 @@
-@import './sprite.scss';
-@import './partials/new-partial/img';
-
-@font-face {
+/* @font-face {
 	font-family: 'Yellowtail';
 	src:url('/fonts/Yellowtail-Regular.ttf')
 }
-
+ */
 body * {
   outline: 1px solid lightgrey;
   font-family: 'Yellowtail', cursive;
 }
 
+@import './partials/new-partial/img';
+@import './sprite.scss';
+
 .main-menu {
-  
+  display: flex;
 }
