@@ -170,12 +170,73 @@ body {
     color: white;
     display: flex;
     align-items: center;
-    font-size: 24px;
+    font-size: 33px;
     font-weight: normal;
   }
 
+.four-columns {
+	display: flex;
+}
 
+.three-columns {
+	display: flex;
+    justify-content: space-between;
+}
 
+.column-four-item {
+    display: inline-block;
+    width: 25%;
+	height: 150px;
+    box-sizing: border-box;
+}
+
+.column-three-item {
+    display: inline-block;
+    width: 25%;
+	box-sizing: border-box;
+}
+
+.text-in-column {
+    font-size: 16px;
+    padding: 20px;
+}
+
+.header-column {
+    text-align: center;
+    font-size: 22px;
+    color: dimgrey;
+    padding: 30px 0;
+}
+
+.header-column span {
+    color: orange;
+}
+.text-column {
+    font-size: 15px;
+    padding: 25px;
+    color: dimgrey;
+}
+.main-header {
+    color: orange;
+    font-size: 38px;
+    font-weight: normal;
+    text-decoration: underline;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.img-column {
+    width: 293px;
+    height: 293px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 5px solid  orange;
+    overflow: hidden;
+}
 
 
 /* .section-forma {
