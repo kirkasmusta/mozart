@@ -10,66 +10,66 @@ body {
 }
 
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
   
-  .page-container {
-      display: flex;
-      min-height: 100%;
-      overflow: hidden;
-      flex-direction: column;
-  }
+.page-container {
+  display: flex;
+  min-height: 100%;
+  overflow: hidden;
+  flex-direction: column;
+}
   
-  .container {
-      max-width: 1200px;
-      margin: 0px auto;
-  }
+.container {
+  max-width: 1200px;
+  margin: 0px auto;
+}
    
-  .header_items {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 130px;
-    align-items: center;
-  }
-  
-  .logo {
-    float: left;
-    display: flex;
-    flex-direction: row;
-  }
+.header_items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 130px;
+  align-items: center;
+}
 
-  .logo_txt {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-  }
+.logo {
+  float: left;
+  display: flex;
+  flex-direction: row;
+}
 
-  .orange {
-    color: orange;
+.logo_txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+.orange {
+  color: orange;
 }
 
 .logo_img {
-    max-width: 100px;
-    max-height: 100px;
+  max-width: 100px;
+  max-height: 100px;
 }
     
 .rabbit {
-    color: dimgrey; 
+  color: dimgrey; 
 }
 
 .menu {
-    float: right;
-  }
+  float: right;
+}
 
 .menu-list {
-    list-style-type: none;
-	  display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .sprite {
@@ -84,12 +84,14 @@ body {
   color: dimgrey;
 }
 
-.submenu-link {
+.submenu-link, 
+.submenu2 {
   display: inline-block;
   position: relative;
 }
 
-.submenu {
+.submenu,
+.submenu2-item {
   display: none;
   position: absolute;
   top: 100%;
@@ -105,84 +107,53 @@ body {
   padding: 5px;
 }
 
-.submenu-link:hover .submenu {
-  display: flex;
-  flex-direction: column;
-}
-
-.submenu2 {
-  display: inline-block;
-  position: relative;
-}
-
-.submenu2-item {
-  display: none;
-  position: absolute;
-  left: 100%;
-  top: 0;
-  min-width: 200px;
-  list-style-type: none;
-  padding: 100px 0 0 100px;
-  margin: -100px 0 0 -100px;
-  }
-
-.submenu2-item > li {
-  background-color: rgb(184, 85, 48);
-  padding: 5px;
-} 
+.submenu-link:hover .submenu,
 .submenu2:hover .submenu2-item {
   display: flex;
   flex-direction: column;
 }
 
+.submenu2-item > li {
+  background-color: rgb(184, 85, 48);
+  padding: 5px;
+}
 
 .section-with-background {
-      background-image: url('./img/fon.png');
-      background-size: cover;
-      background-repeat: no-repeat;
-      height: 400px;
-      border-top:	5px solid orange;
-      border-bottom: 5px solid orange;
-  }
+  background-image: url('./img/fon.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  border-top:	5px solid orange;
+  border-bottom: 5px solid orange;
+}
 
-  .section-with-background
-  .container {
-    height: 100%;
-    display: flex;
-    align-items: center;
-  }  
+.section-with-background
+.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}  
 
-  .slogan {
-      margin-left: 10px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      font-size: 30px;
-  }
-  
-  .slogan-1 {
-      background-color: dimgrey;
-      color: orange;
-      margin-bottom: 10px;
-      padding: 10px;
-  }
-  
-  .slogan-2 {
-      background-color: orange;
-      color: dimgrey;
-      padding: 10px;
-  }
-  
-  footer {
-    background-color: orange;
-    height: 71px;
-    border-bottom: 3px solid rgb(226, 149, 7);
-    color: white;
-    display: flex;
-    align-items: center;
-    font-size: 33px;
-    font-weight: normal;
-  }
+.slogan {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 30px;
+}
+
+.slogan-1 {
+  background-color: dimgrey;
+  color: orange;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.slogan-2 {
+  background-color: orange;
+  color: dimgrey;
+  padding: 10px;
+}
 
 .four-columns {
 	display: flex;
@@ -191,7 +162,7 @@ body {
 
 .three-columns {
 	display: flex;
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .column-four-item {
@@ -213,12 +184,12 @@ body {
 }
 
 .text-in-column {
-    font-size: 16px;
-    padding: 20px 20px 0;
-    max-height: 140px;
-    overflow: hidden;
-    transition: max-height .5s ease;
-    top: 100%;
+  font-size: 16px;
+  padding: 20px 20px 0;
+  max-height: 140px;
+  overflow: hidden;
+  transition: max-height .5s ease;
+  top: 100%;
 }
 
 .opener {
@@ -231,9 +202,9 @@ body {
 }
 
 .opener:after {
-content: "read more ...";
-display: inline-block;
-color: orange;
+  content: "read more ...";
+  display: inline-block;
+  color: orange;
 }
 
 .accordion_input:checked ~ .text-in-column {
@@ -247,43 +218,45 @@ color: orange;
 }
 
 .header-column {
-    text-align: center;
-    font-size: 22px;
-    color: dimgrey;
-    padding: 30px 0;
+  text-align: center;
+  font-size: 22px;
+  color: dimgrey;
+  padding: 30px 0;
 }
 
 .header-column span {
-    color: orange;
+  color: orange;
 }
+
 .text-column {
-    font-size: 15px;
-    padding: 25px;
-    color: dimgrey;
+  font-size: 15px;
+  padding: 25px;
+  color: dimgrey;
 }
+
 .main-header {
-    color: orange;
-    font-size: 38px;
-    font-weight: normal;
-    text-decoration: underline;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px 0;
+  color: orange;
+  font-size: 38px;
+  font-weight: normal;
+  text-decoration: underline;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
 }
 
 .img-column {
-    width: 293px;
-    height: 293px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    border: 5px solid  orange;
-    overflow: hidden;
+  width: 293px;
+  height: 293px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 5px solid  orange;
+  overflow: hidden;
 }
 
-.submit {
+button {
   background-color: orange;
   color: white;
   font-size: 28px;
@@ -295,6 +268,12 @@ color: orange;
 .submit-button {
   display: flex;
   justify-content: right;
+}
+
+.submit:active {
+  top: 1px;
+  right: 1px;
+  position: relative;
 }
 
 .field {
@@ -314,7 +293,7 @@ color: orange;
   padding: 5px;
   background-color: rgb(238, 238, 238);
   border: lightgrey 1px solid;
-  }
+}
 
 .field-name {
   float: left;
@@ -329,3 +308,13 @@ input {
   height: 90px;
 }
 
+footer {
+  background-color: orange;
+  height: 71px;
+  border-bottom: 3px solid rgb(226, 149, 7);
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 33px;
+  font-weight: normal;
+}
