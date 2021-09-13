@@ -93,10 +93,17 @@ body {
   display: none;
   position: absolute;
   top: 100%;
-  min-width: 120px;
-  background-color: orangered;
-  padding: 10px 20px;
+  left: 100%;
+  min-width: 180px;
   list-style-type: none;
+  padding: 50px 0 0 50px;
+  margin: -50px 0 0 -50px;
+  
+}
+
+.submenu > li {
+  background-color: orangered;
+  padding: 5px;
 }
 
 .submenu-link:hover .submenu {
@@ -116,9 +123,9 @@ body {
   top: 0;
   min-width: 120px;
   background-color: rgb(184, 85, 48);
-  padding: 10px 20px;
+  padding: 20px 20px;
   list-style-type: none;
-}
+  }
 
 .submenu2:hover .submenu2-item {
   display: flex;
@@ -176,6 +183,7 @@ body {
 
 .four-columns {
 	display: flex;
+  padding-bottom: 20px;
 }
 
 .three-columns {
@@ -184,21 +192,55 @@ body {
 }
 
 .column-four-item {
-    display: inline-block;
-    width: 25%;
-	height: 150px;
-    box-sizing: border-box;
+  display: inline-block;
+  width: 25%;
+  height: 140px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.accordion_input {
+  display: none;
 }
 
 .column-three-item {
-    display: inline-block;
-    width: 25%;
+  display: inline-block;
+  width: 25%;
 	box-sizing: border-box;
 }
 
 .text-in-column {
     font-size: 16px;
-    padding: 20px;
+    padding: 20px 20px 0;
+    max-height: 140px;
+    overflow: hidden;
+    transition: max-height .5s ease;
+    top: 100%;
+}
+
+.opener {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  color: orange;
+  font-style: italic;
+  padding-right: 20px;
+}
+
+.opener:after {
+content: "read more ...";
+display: inline-block;
+color: orange;
+}
+
+.accordion_input:checked ~ .text-in-column {
+  max-height: 140vh;
+  background-color: lightgrey;
+}
+
+.accordion_input:checked ~ .opener:after {
+  content: "read less...";
+  background-color: lightgrey;
 }
 
 .header-column {
@@ -238,33 +280,49 @@ body {
     overflow: hidden;
 }
 
-
-/* .section-forma {
-	height: 260px;
-	display: grid;
-	grid-template-rows: 1fr 1fr 2fr;
-	grid-row-gap: 30px;
-	margin: 20px 0;
-}
-
-.field {
-	display: grid;
-	grid-template-columns: 1fr 6fr;
-	grid-column-gap: 15px;
-}
-
-.field-name {
-	color: orange;
-}
-	
-.button {
-	float: right;
-	color: white;
-	padding: 5px 30px;
-	background: orange;
-	border: none;
+button {
+  background-color: orange;
+  color: white;
+  font-size: 30px;
+  font-weight: normal;
+  margin: 0 20px 20px 0;
+  border: 0;
 }
 
 .submit-button {
-	margin-bottom: 60px;
-} */
+  display: flex;
+  justify-content: right;
+}
+
+.field {
+  padding: 20px;
+  color: orange;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.field .field-input {
+  overflow: hidden;
+}
+
+.field-input input {
+  width: 100%;
+  margin: 0;
+  padding: 5px;
+  background-color: rgb(238, 238, 238);
+  border: lightgrey 1px solid;
+  }
+
+.field-name {
+  float: left;
+  min-width: 10%;
+}
+
+input {
+  height: 30px;
+}
+
+.message {
+  height: 90px;
+}
+
