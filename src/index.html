@@ -3,39 +3,105 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
- <!--    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet"> -->
     <script src="https://kit.fontawesome.com/130db515d0.js" crossorigin="anonymous"></script> 
-    <link rel="stylesheet" href="./fonts/Yellowtail-Regular.ttf">
+    <link rel="stylesheet" href="./fonts/PTSans.ttf">
     <link rel="stylesheet" href="./main.scss">
     <title>First project</title>
     <script src="./js/main.js" defer></script>
   </head>
   <body>
-<!--     <h1>Hello world</h1>
-    <i class="fas fa-paw"></i>
-    <i class="fas fa-cat"></i>
-    <i class="fas fa-dog"></i>
-    <i class="fas fa-bone"></i>
-    <div class="sprite bg-pet3"></div> -->
-    <div class="main-menu">
-      @@include('./partials/new-partial/_img.html', {
-        "path": "./img/home.png",
-        "caption": "home"
-      })
-      @@include('./partials/new-partial/_img.html', {
-        "path": "./img/mail.png",
-        "caption": "mail"
-      })
-      @@include('./partials/new-partial/_img.html', {
-        "path": "./img/info.png",
-        "caption": "info"
-      })@@include('./partials/new-partial/_img.html', {
-        "path": "./img/pen.png",
-        "caption": "pen"
-      })@@include('./partials/new-partial/_img.html', {
-        "path": "./img/glob.png",
-        "caption": "glob"
-      })
+    <div class="container">
+      <ul class="main-menu">
+        <li>Hot themes </li>
+        <li>EURO-2016 Playoffs</li>
+        <li>El'Classico</li>
+      </ul>
+      <div class="hot-theme">
+        <div class="hot-theme-img">
+          <img src="./img/main-theme-img.png" alt="">
+        </div>
+        <div class="hot-theme-txt">
+          <div class="hot-theme-txt1">Jurgen Klopp makes a sexy Liverpool</div>
+          <div class="hot-theme-txt2">Liverpool outcast Jose Enrique set to be handed lifeline by Jurgen Klopp</div>
+          <div class="hot-theme-txt3">7/20</div>
+        </div>
+      </div>
+      <div class="main-news">
+        <div class="header">Main News
+        </div>
+        <div class="main-new">
+          <div class="main-news-item">
+            <div class="main-new-img">
+              <img src="./img/Layer 161.png" alt="">
+            </div>
+            <div class="main-new-txt">
+              The FIFA Ballon d'Or is an annual association football award given by FIFA
+            </div>
+          </div>
+          <div class="main-news-item">
+            <div class="main-new-img">
+              <img src="./img/Layer 162.png" alt="">
+            </div>
+            <div class="main-new-txt">
+              Messi got some balloons
+            </div>
+          </div>
+          <div class="main-news-item">
+            <div class="main-new-img">
+              <img src="./img/Layer 163.png" alt="">
+            </div>
+            <div class="main-new-txt">
+              CR7 also, but not so much
+            </div>
+          </div>
+          <div class="main-news-item">
+            <div class="main-new-img">
+              <img src="./img/Layer 164.png" alt="">
+            </div>
+            <div class="main-new-txt">
+              Ribery got vase!
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="container2">
+        <div class="header">Last News </div>
+        <ul>
+          <li>Real Madrid players to gaffer: up and at 'em!</li>
+          <li>Swedes indebted to talismanic Ibrahimovic marca.com</li>
+          <li>2016 European Championship to go ahead in France</li>
+          <li>Ancelotti: "Premier League return is my no. 1 choice"</li>
+          <li>Walters double secures Euro 2016 spot for Ireland</li>
+          <li>"They intended to set off an explosive inside the stadium" - eyewitness</li>
+          <li>Raúl bids goodbye in style</li>
+          <li>Five reasons Belgium vs. Spain was called off</li>
+          <li>Niggles won't keep Benzema out of 'Clásico'</li>
+          <li>Abdeslam suspected to have been near King Baudouin Stadium</li>
+        </ul>
+        <div class="header">Newsfeed </div>
+        <div class="newsfeed-item">
+          <div class="newsfeed-item-img">
+            <img src="./img/Layer 165.png" alt="">
+          </div>
+          <div class="newsfeed-item-txt">
+            Zlatan Ibrahimovic on target as Sweden qualify with draw in Denmark
+          </div>
+        </div>
+
+
+      </div>
+
+
+
+
+
+
+
     </div>
+
+
+
+
   </body> 
 </html>

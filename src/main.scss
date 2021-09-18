@@ -1,16 +1,123 @@
-/* @font-face {
-	font-family: 'Yellowtail';
-	src:url('/fonts/Yellowtail-Regular.ttf')
-}
- */
 body * {
   outline: 1px solid lightgrey;
-  font-family: 'Yellowtail', cursive;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+  color: #333333;
 }
 
-@import './partials/new-partial/img';
-@import './sprite.scss';
+.container {
+  width: 620px;
+}
 
 .main-menu {
   display: flex;
+  justify-content: left;
+  list-style: none;
+  background-color: #d7d7d9;
+  height: 30px;
+  font-size: 30px;
+  color: #333333;
+  padding-left: 0;
+  margin: 20px 0;
+  align-items: center;
+  font-weight: 600;
+}
+
+.main-menu li {
+   padding: 10px 18px;
+}
+
+ .hot-theme {
+   display: flex;
+   background-color: #f7f9fa;
+   border-bottom: 5px solid #c80000;
+   margin-bottom: 30px;
+   box-sizing: border-box;
+}
+
+.hot-theme-img {
+  height: 250px;
+}
+.hot-theme-txt {
+  padding: 10px 20px 0;
+}
+
+.hot-theme-txt1 {
+  font-size: 30px;
+  color: #c80000;
+}
+
+.hot-theme-txt2 {
+  font-size: 14px;
+  color: #333333;
+  padding: 15px 0 41px 0;
+}
+
+.hot-theme-txt3 {
+  display: flex;
+  justify-content: right;
+  font-size: 18px;
+  color: #333333;
+  padding-right: 40px;
+}
+
+.main-new {
+  display: flex;
+  width: 25%;
+}
+
+.header {
+  font-size: 24px;
+  overflow: hidden;
+}
+
+.header:after {
+  content: "";
+  display: inline-block;
+  vertical-align: inherit;
+  width: 100%;
+  height: 2px;
+  background-color: #333333;
+  position: relative;
+  margin-right: -100%;
+}
+
+.main-news-item {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+  box-sizing: border-box;
+  max-width: 158px;
+  margin-bottom: 50px;
+}
+
+.main-news-item:first-child {
+  padding-left: 0;
+}
+
+.main-news-item:last-child {
+  padding-right: 0;
+}
+
+.container2 {
+  width: 380px;
+}
+
+.container2 .header {
+  color: #3d76cc;
+}
+
+.container2 .header:after {
+background-color: #c80000;
+}
+.container2 ul {
+  padding-inline-start: 15px;
+  margin: 0;
+}
+
+.container2 ul li {
+  padding-bottom: 10px;
+  font-size: 13px;
+  line-height: 17px;
+  letter-spacing: -0.1px;
 }
