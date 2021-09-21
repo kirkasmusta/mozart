@@ -6,179 +6,28 @@
     <script src="https://kit.fontawesome.com/130db515d0.js" crossorigin="anonymous"></script> 
     <link rel="stylesheet" href="./fonts/PTSans.ttf">
     <link rel="stylesheet" href="./main.scss">
-    <title>First project</title>
+    <title>Second project</title>
     <script src="./js/main.js" defer></script>
   </head>
   <body>
     <div class="with-aside">
       <div class="container">
-        <ul class="main-menu">
-          <li>Hot themes </li>
-          <li>EURO-2016 Playoffs</li>
-          <li>El'Classico</li>
-        </ul>
-        <div class="hot-theme">
-          <div class="hot-theme-img">
-            <img src="./img/main-theme-img.png" alt="">
-          </div>
-          <div class="hot-theme-txt">
-            <div class="hot-theme-txt1">Jurgen Klopp makes a sexy Liverpool</div>
-            <div class="hot-theme-txt2">Liverpool outcast Jose Enrique set to be handed lifeline by Jurgen Klopp</div>
-            <div class="hot-theme-txt3">7/20</div>
-          </div>
-        </div>
-        <div class="main-news">
-          <div class="header">Main News
-          </div>
-          <div class="main-new">
-            <div class="main-news-item">
-              <div class="main-new-img">
-                <img src="./img/Layer 161.png" alt="">
-              </div>
-              <div class="main-new-txt">
-                The FIFA Ballon d'Or is an annual association football award given by FIFA
-              </div>
-            </div>
-            <div class="main-news-item">
-              <div class="main-new-img">
-                <img src="./img/Layer 162.png" alt="">
-              </div>
-              <div class="main-new-txt">
-                Messi got some balloons
-              </div>
-            </div>
-            <div class="main-news-item">
-              <div class="main-new-img">
-                <img src="./img/Layer 163.png" alt="">
-              </div>
-              <div class="main-new-txt">
-                CR7 also, but not so much
-              </div>
-            </div>
-            <div class="main-news-item">
-              <div class="main-new-img">
-                <img src="./img/Layer 164.png" alt="">
-              </div>
-              <div class="main-new-txt">
-                Ribery got vase!
-              </div>
-            </div>
-
-          </div>
-        </div>
+        @@include('./partials/main/_main.html')
         <div class="with-aside2">
           <div class="container2">
-            <div class="header">Last News </div>
-            <ul>
-              <li>Real Madrid players to gaffer: up and at 'em!</li>
-              <li>Swedes indebted to talismanic Ibrahimovic marca.com</li>
-              <li>2016 European Championship to go ahead in France</li>
-              <li>Ancelotti: "Premier League return is my no. 1 choice"</li>
-              <li>Walters double secures Euro 2016 spot for Ireland</li>
-              <li>"They intended to set off an explosive inside the stadium" - eyewitness</li>
-              <li>Raúl bids goodbye in style</li>
-              <li>Five reasons Belgium vs. Spain was called off</li>
-              <li>Niggles won't keep Benzema out of 'Clásico'</li>
-              <li>Abdeslam suspected to have been near King Baudouin Stadium</li>
-            </ul>
-            <div class="header">Newsfeed </div>
-            <div class="newsfeed-item">
-              <div class="newsfeed-item-img">
-                <img src="./img/Layer 165.png" alt="">
-              </div>
-              <div class="newsfeed-item-txt">
-                Zlatan Ibrahimovic on target as Sweden qualify with draw in Denmark
-              </div>
-            </div>
-            <ul>
-              <li>Alvaro Morata insists Juventus are “still hungry” and targets victory over Milan on Saturday.</li>
-              <li>Ecuador stay perfect as Argentina, Brazil win</li>
-              <li>Sweden, Ukraine complete Euro line-up fifa.com</li>
-              <li>Aubameyang penalty gives Gabon World Cup joy</li>
-            </ul>
+            @@include('./partials/news/_news.html')
           </div>
           <div class="with-aside2__news-content">
-            <div class="news-content-item">
-              <div class="news-content-img">
-                <img src="./img/Layer 166.png" alt="">
-              </div>
-              <div class="news-content-txt">
-                Here is how Leage Champions trophy looks like
-              </div>
-            </div>
-            <div class="news-content-item">
-              <div class="news-content-img">
-                <img src="./img/Layer 167.png" alt="">
-              </div>
-              <div class="news-content-txt">
-                Casillas got some piece of paper
-              </div>
-            </div><div class="news-content-item">
-              <div class="news-content-img">
-                <img src="./img/Layer 90.png" alt="">
-              </div>
-              <div class="news-content-txt">
-                Bayern Munich vs Barcelona. Fangirls :)
-              </div>
-            </div>
+          @@include('./partials/_aside2.html')
           </div>
         </div>
-
-
-
-
-
-
-
       </div>
       <div class="aside">
-        <div class="video">
-          <div class="header-video">ВИДЕО</div>
-          <div class="video-item">
-            <div class="video-img">
-              <img src="./img/Layer 147.png" alt="">
-            </div>
-            <div class="video-txt">
-              Фильм дня: Гитлер капут!
-            </div>
-          </div>
-          <div class="video-item">
-            <div class="video-img">
-              <img src="./img/Layer 148.png" alt="">
-            </div>
-            <div class="video-txt">
-              Ксения Собчак беременна
-            </div>
-          </div>
-          <div class="video-item">
-            <div class="video-img">
-              <img src="./img/Layer 149.png" alt="">
-            </div>
-            <div class="video-txt">
-              Группа парней избила влюбленную пару бейсбольной битой
-            </div>
-          </div>
-          <div class="video-item">
-            <div class="video-img">
-              <img src="./img/Layer 150.png" alt="">
-            </div>
-            <div class="video-txt">
-              Небесные ласточки: двухсерийная музыкальная комедия
-            </div>
-          </div>
-          <div class="video-item">
-            <div class="video-img">
-              <img src="./img/Layer 151.png" alt="">
-            </div>
-            <div class="video-txt">
-              На дополнительном кастинге "Хочу в ВИА Гру" девушек просили
-            </div>
-          </div>
-        </div>
+        @@include('./partials/_aside.html')       
       </div>
     </div>
-
-
-
+    <div class="footer">
+      <div class="header">Обзор</div>
+    </div>
   </body> 
 </html>
