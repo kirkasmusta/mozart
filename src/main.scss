@@ -1,259 +1,34 @@
-body * {
-  /* outline: 1px solid lightgrey; */
-  font-family: 'PT Sans', sans-serif;
-  font-size: 16px;
-  color: #333333;
+section {
+display: flex;
+flex-direction: row-reverse;
+justify-content: center;
 }
 
-.with-aside {
-  display: flex;
-}
-
-.container {
-  flex: 1 0 620px;
-  max-width: 620px;
-}
-
-.aside {
-  flex: 0 1 300px;
-  padding: 23px 22px;
-}
-
-.main-menu {
-  display: flex;
-  justify-content: left;
-  list-style: none;
-  background-color: #d7d7d9;
-  height: 30px;
-  font-size: 30px;
-  color: #333333;
-  padding-left: 0;
-  margin: 20px 0;
-  align-items: center;
-  font-weight: 600;
-}
-
-.main-menu li {
-   padding: 10px 14px;
-}
-
- .hot-theme {
-   display: flex;
-   background-color: #f7f9fa;
-   border-bottom: 5px solid #c80000;
-   margin-bottom: 27px;
-   box-sizing: border-box;
-}
-
-.hot-theme-img {
-  height: 250px;
-}
-.hot-theme-txt {
-  padding: 10px 20px 0;
-}
-
-.hot-theme-txt1 {
-  font-size: 30px;
-  color: #c80000;
-}
-
-.hot-theme-txt2 {
-  font-size: 14px;
-  color: #333333;
-  padding: 15px 0 41px 0;
-}
-
-.hot-theme-txt3 {
-  display: flex;
-  justify-content: right;
-  font-size: 18px;
-  color: #333333;
-  padding-right: 40px;
-}
-
-.main-new {
-  display: flex;
-  width: 25%;
-  padding-top: 4px;
-  padding-bottom: 2px;
-}
-
-.main-new-txt {
-  font-size: 13px;
-}
-
-.header {
-  font-size: 22px;
-  overflow: hidden;
-}
-
-.header:after {
-  content: "";
-  display: inline-block;
-  vertical-align: inherit;
-  width: 100%;
-  height: 2px;
-  background-color: #333333;
-  position: relative;
-  margin-right: -100%;
-}
-
-.main-news-item {
-  display: flex;
-  flex-direction: column;
+.styled-checkbox {
+  width: 1px;
+  height: 1px;
+  -webkit-appearance: none;
+  opacity: 0;
   padding: 0 10px;
-  box-sizing: border-box;
-  max-width: 158px;
-  margin-bottom: 56px;
 }
 
-.main-news-item:first-child {
-  padding-left: 0;
-}
-
-.main-news-item:last-child {
-  padding-right: 0;
-}
-
-.with-aside2 {
-  display: flex;
-}
-
-.container2 {
-  width: 560px;
-}
-
-.with-aside2__news-content {
-  flex: 1 0 180px;
-  padding-left: 20px;
-} 
-
-.container2 .header {
-  color: #3d76cc;
-}
-
-.container2 .header:after {
-background-color: #c80000;
-}
-
-.container2 ul {
-  padding-inline-start: 15px;
-  margin: 0;
-  padding-bottom: 30px;
-}
-
-.container2 ul li {
-  padding-bottom: 5px;
-  padding-top: 5px;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: -0.9px;
-}
-
-.newsfeed-item {
-  display: flex;
-  padding-top: 7px;
-}
-
-.newsfeed-item-txt {
-  font-weight: bold;
-  align-items: center;
-  display: flex;
-  font-size: 13px;
-  padding-left: 5px;
-}
-
-.news-content-txt {
-  font-size: 16px;
-  font-weight: bold;
-  padding-bottom: 15px;
-}
-
-.news-content-item {
-  padding-top: 5px;
-}
-
-.video {
-  display: flex;
-  flex-direction: column;
-}
-
-
-.video-item, 
-.stories {
-  display: flex;
-  padding-bottom: 5px;
-  flex-direction: row;
-}
-
-.stories {
-  padding-top: 8px;
-  padding-bottom: 9px;
-}
-
-.header-video {
-  overflow: hidden;
-  color: #6a0099;
-  font-weight: bold;
-  text-align: center;
-  font-size: 16px;
-  padding-bottom: 13px;
-}
-
-.header-video:before {
-  content: "";
+.styled-checkbox__label:before {
+  content: "\f1b0";
+  font-family: "Font Awesome 5 Free";
+  -webkit-font-smoothing: antialiased;
   display: inline-block;
-  vertical-align: middle;
-  width: 100%;
-  height: 2px;
-  background-color: #333333;
-  position: relative;
-  margin-left: -100%;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  font-weight: 900;
+  font-size: 4rem;
 }
 
-.header-video:after {
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
-  width: 100%;
-  height: 2px;
-  background-color: #333333;
-  position: relative;
-  margin-right: -100%;
+.styled-checkbox:hover ~ .styled-checkbox__label {
+  color: purple;
 }
 
-.video-txt { 
-  padding-left: 10px;
-  font-weight: bold;
-  font-size: 13px;
-  line-height: 19px;
-}
-
-.stories-txt {
-  padding-left: 10px;
-  font-size: 16px;
-  line-height: 19px;
-}
-
-.more-video {
-  padding-top: 23px;
-  padding-bottom: 5px;
-  font-size: 16px;
-  border-bottom: 5px solid;
-  margin-bottom: 46px;
-}
-
-.header-aside {
-  font-size: 22px;
-  padding-top: 2px;
-  border-bottom: 3px solid;
-}
-
-.stories-item {
-  border-bottom: 5px solid;
-  padding-bottom: 5px;
-}
-
-.footer {
-  padding-top: 11px;
+.styled-checkbox:checked ~ .styled-checkbox__label {
+  color: orangered;
 }
