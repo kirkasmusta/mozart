@@ -38,6 +38,10 @@ body {
   float: left;
   display: flex;
   flex-direction: row;
+  background-image: url('./img/lapa.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 106px;
 }
 
 .logo_txt {
@@ -47,6 +51,7 @@ body {
   align-items: center;
   font-size: 20px;
   color: orange;
+  margin-left: 80px;
 }
 
 .logo_img {
