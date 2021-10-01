@@ -7,6 +7,7 @@
 body {
   font-family: 'Arsenal';
   font-weight: bold;
+  background-color: rgb(0, 0, 0);
 }
 
 * {
@@ -45,19 +46,13 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 20px;
-}
-
-.orange {
   color: orange;
 }
 
 .logo_img {
   max-width: 100px;
   max-height: 100px;
-}
-    
-.rabbit {
-  color: dimgrey; 
+  
 }
 
 .menu {
@@ -84,47 +79,19 @@ body {
   color: dimgrey;
 }
 
-.submenu-link, 
-.submenu2 {
-  display: inline-block;
-  position: relative;
-}
-
-.submenu,
-.submenu2-item {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 100%;
-  min-width: 200px;
-  list-style-type: none;
-  padding: 100px 0 0 100px;
-  margin: -100px 0 0 -100px;
-}
-
-.submenu > li {
-  background-color: orangered;
-  padding: 5px;
-}
-
-.submenu-link:hover .submenu,
-.submenu2:hover .submenu2-item {
-  display: flex;
-  flex-direction: column;
-}
-
-.submenu2-item > li {
-  background-color: rgb(184, 85, 48);
-  padding: 5px;
-}
-
 .section-with-background {
-  background-image: url('./img/fon.png');
+  background-color: dimgrey;
   background-size: cover;
   background-repeat: no-repeat;
   height: 400px;
-  border-top:	5px solid orange;
-  border-bottom: 5px solid orange;
+  border-top:	5px solid rgb(82, 81, 81);
+  border-bottom: 5px solid rgb(82, 81, 81);
+  display: flex;
+  align-items: center;
+}
+
+.slider img{
+  height: 390px;
 }
 
 .section-with-background
@@ -133,27 +100,6 @@ body {
   display: flex;
   align-items: center;
 }  
-
-.slogan {
-  margin-left: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 30px;
-}
-
-.slogan-1 {
-  background-color: dimgrey;
-  color: orange;
-  margin-bottom: 10px;
-  padding: 10px;
-}
-
-.slogan-2 {
-  background-color: orange;
-  color: dimgrey;
-  padding: 10px;
-}
 
 .four-columns {
 	display: flex;
@@ -167,7 +113,7 @@ body {
 
 .column-four-item {
   display: inline-block;
-  width: 25%;
+  width: 33%;
   height: 140px;
   box-sizing: border-box;
   position: relative;
@@ -186,7 +132,7 @@ body {
 .text-in-column {
   font-size: 16px;
   padding: 20px 20px 0;
-  max-height: 140px;
+  max-height: 40px;
   overflow: hidden;
   transition: max-height .5s ease;
   top: 100%;
