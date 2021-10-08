@@ -151,6 +151,7 @@ body {
   overflow: hidden;
   transition: max-height .5s ease;
   top: 100%;
+  height: 10px;
 }
 
 .opener {
@@ -179,7 +180,7 @@ body {
   color: black;
 }
 
-.header-column {
+/* .header-column {
   text-align: center;
   font-size: 22px;
   color: dimgrey;
@@ -194,9 +195,9 @@ body {
   font-size: 15px;
   padding: 25px;
   color: dimgrey;
-}
+} */
 
-.main-header {
+/* .main-header {
   color: orange;
   font-size: 38px;
   font-weight: normal;
@@ -205,9 +206,9 @@ body {
   align-items: center;
   justify-content: center;
   margin: 20px 0;
-}
+} */
 
-.img-column {
+/* .img-column {
   width: 293px;
   height: 293px;
   display: flex;
@@ -216,18 +217,18 @@ body {
   border-radius: 50%;
   border: 5px solid  orange;
   overflow: hidden;
-}
+} */
 
-button {
+/* button {
   background-color: orange;
   color: white;
   font-size: 28px;
   font-weight: normal;
   margin: 0 20px 20px 0;
   border: 0;
-}
+} */
 
-.submit-button {
+/* .submit-button {
   display: flex;
   justify-content: right;
 }
@@ -268,15 +269,18 @@ input {
 
 .message {
   height: 90px;
+} */
+
+.visible-xs {
+  display: none;
 }
 
-footer {
-  background-color: orange;
-  height: 71px;
-  border-bottom: 3px solid rgb(226, 149, 7);
-  color: white;
+.footer-list {
+  list-style: none;
   display: flex;
-  align-items: center;
-  font-size: 33px;
-  font-weight: normal;
+  justify-content: center;
+}
+
+.footer-list li {
+  padding: 10px;
 }
