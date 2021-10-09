@@ -1,7 +1,11 @@
-@import './sprite.scss';
 @font-face {
   font-family: 'Arsenal';
   src: url('/fonts/Arsenal.ttf');
+}
+
+@font-face {
+  font-family: 'Vivaldi';
+  src: url('/fonts/Vivaldi.ttf');
 }
 
 body {
@@ -31,7 +35,6 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 130px;
   align-items: center;
 }
 
@@ -39,26 +42,14 @@ body {
   float: left;
   display: flex;
   flex-direction: row;
-  background-image: url('./img/lapa.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 106px;
 }
 
 .logo_txt {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
+  font-size: 64px;
   color: orange;
-  margin-left: 80px;
-}
-
-.logo_img {
-  max-width: 100px;
-  max-height: 100px;
-  
+  margin-left: 10px;
+  font-family: 'Vivaldi';
+  letter-spacing: 0.08em;
 }
 
 .menu {
@@ -68,21 +59,11 @@ body {
 .menu-list {
   list-style-type: none;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
 }
 
-.sprite {
-	display: block;
-	max-width:60px;
-	max-height:50px;
-	margin: 0 1em;
-}
-
-.sprite + p {
-	text-align: center;
-  color: dimgrey;
+.menu-list li {
+  text-align: center;
+  padding: 0 25px;
 }
 
 .section-with-background {
