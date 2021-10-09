@@ -1,1 +1,6 @@
-//here will by JavaScript code ...
+$(document).ready(function(){
+    $('.slider').slick({
+        dots:true,
+    }
+    );
+});
