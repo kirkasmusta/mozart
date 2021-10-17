@@ -8,6 +8,10 @@
   src: url('/fonts/Vivaldi.ttf');
 }
 
+p {
+margin: 0;
+}
+
 body {
   font-family: 'Arsenal';
   font-weight: bold;
@@ -39,7 +43,6 @@ body {
 }
 
 .logo {
-  float: left;
   display: flex;
   flex-direction: row;
 }
@@ -52,13 +55,13 @@ body {
   letter-spacing: 0.08em;
 }
 
-.menu {
-  float: right;
-}
-
 .menu-list {
   list-style-type: none;
   display: flex;
+}
+
+.menu-list ul {
+  margin: 0;
 }
 
 .menu-list li {
@@ -67,21 +70,13 @@ body {
 }
 
 .section-with-background {
-  height: 400px;
   display: flex;
   align-items: center;
-  margin: 20px 0;
 }
 
 .slider img{
   height: 390px;
 }
-
-.section-with-background
-.container {
-  display: flex;
-  align-items: center;
-}  
 
 .four-columns {
 	display: flex;
@@ -103,11 +98,13 @@ body {
 
 .txtimg {
   display: flex;
+  align-items: flex-end;
 }
 
 .txt {
-  padding: 132px 0 0 5px;
   font-size: 18px;
+  margin: 0;
+  padding-left: 5px;
 }
 
 .accordion_input {
@@ -159,7 +156,7 @@ body {
   margin: 20px 0;
 }
 
-button {
+.submit {
   background-color: orange;
   color: white;
   font-size: 20px;
@@ -200,7 +197,6 @@ button {
   padding: 10px;
   background-color: rgb(238, 238, 238);
   border: lightgrey 1px solid;
-
 }
 
 input {
@@ -229,7 +225,7 @@ input {
 
 .slick-track {
   display: flex;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .slick-list {
@@ -238,13 +234,9 @@ input {
 
 .slider .slick-arrow{
   position: absolute;
-  top: 40%;
+  top: 20rem;
   z-index: 1;
   font-size: 0;
-}
-
-.slider .slick-arrow.slick-prev{
-  left: 0;
 }
 
 .slider__item {
@@ -252,7 +244,7 @@ input {
 }
 
 .slider .slick-arrow.slick-next{
-  right: -20px;
+  right: 40px;
 }
 
 .slick-dots {
@@ -276,4 +268,13 @@ input {
 .slick-dots li.slick-active button {
   background-color: transparent;
   border: 1px solid orange;
+}
+
+button {
+  background-color: orange;
+  margin: 0 20px 20px 0;
+  border: 0;
+  border-radius: 2rem;
+  cursor: pointer;
+  padding: 15px;
 }
