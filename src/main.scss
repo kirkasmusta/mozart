@@ -37,5 +37,8 @@ li {
 }
 
 .with_bg {
-  background-image: image(.);
+  background-image: url('./img/coffee/fon.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 739px;
 }
