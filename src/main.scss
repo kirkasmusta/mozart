@@ -1,14 +1,35 @@
-/* @font-face {
-  font-family: 'Arsenal';
-  src: url('/fonts/Arsenal.ttf');
+.container {
+  margin: 0 300px;
+  width: 1320px;
 }
 
-@font-face {
-  font-family: 'Vivaldi';
-  src: url('/fonts/Vivaldi.ttf');
+.header {
+  background: #1C1814;
+  display: flex;
+  justify-content: space-between;
+  color: #FFFFFF;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  height: 125px;
+  width: 1920px;
+  left: 0px;
+  top: 0px;
 }
 
-p {
+ul {
+  display: flex;
+  flex-direction: row ;
+}
+
+li {
+  list-style-type: none;
+  padding-right: 48px;
+}
+
+/*p {
 margin: 0;
 }
 
@@ -27,5 +48,5 @@ body {
   @media screen and (min-width: 1200px) {
   display: flex;
 }
-}
+} */
  
