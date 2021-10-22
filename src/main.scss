@@ -49,19 +49,19 @@ li {
 .container {
   height: 100%;
   display: flex;
-  align-items: center;
-}
-
-.txt_bg {
-  display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding-left: 75px;
   padding-top: 147px;
-  width: 529px;
+  padding-left: 75px;
 }
 
 .slogan {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 529px;
+}
+
+.slogan1 {
   font-size: 67px;
 }
 
@@ -71,9 +71,37 @@ li {
   text-transform: capitalize;
 }
 
-button {
-  padding-top: 32px;
-  background-color: #C99E71;
-  font-size: 18px
-  ;
+.button {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 75px;
 }
+
+button {
+  background-color: #C99E71;
+  font-size: 18px;
+  padding: 24px 40px;
+  margin-top: 32px;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video_img {
+  background-image: url('./img/coffee/Ellipse.svg');
+  width: 70px;
+  height: 70px;
+  display:flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.video p {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
