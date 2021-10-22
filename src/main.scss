@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  max-width: 1920px;
+  color: #FFFFFF;
 }
 
 .hero {
@@ -38,7 +40,12 @@ li {
 
 .with_bg {
   background-image: url('./img/coffee/fon.png');
-  background-size: cover;
-  background-repeat: no-repeat;
   height: 739px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.txt_bg {
+  margin-top: 115px;
+  padding: 32px 75px;
 }
