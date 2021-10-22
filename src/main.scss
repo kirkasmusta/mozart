@@ -1,12 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+
+.hero {
+  background: #1C1814;
+}
+
 .container {
-  margin: 0 300px;
+  margin: 0px auto;
   width: 1320px;
 }
 
 .header {
-  background: #1C1814;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   color: #FFFFFF;
   font-family: Inter;
   font-style: normal;
@@ -14,7 +22,6 @@
   font-size: 18px;
   line-height: 22px;
   height: 125px;
-  width: 1920px;
   left: 0px;
   top: 0px;
 }
@@ -29,24 +36,6 @@ li {
   padding-right: 48px;
 }
 
-/*p {
-margin: 0;
+.with_bg {
+  background-image: image(.);
 }
-
-body {
-  font-family: 'Arsenal';
-  font-weight: bold;
-  background-color: black;
-  color: grey;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.with-container {
-  @media screen and (min-width: 1200px) {
-  display: flex;
-}
-} */
- 
