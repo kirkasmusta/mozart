@@ -45,7 +45,35 @@ li {
   background-position: bottom;
 }
 
+.with_bg
+.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
 .txt_bg {
-  margin-top: 115px;
-  padding: 32px 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 75px;
+  padding-top: 147px;
+  width: 529px;
+}
+
+.slogan {
+  font-size: 67px;
+}
+
+.slogan2 {
+  padding: 32px 0;
+  font-size: 19px;
+  text-transform: capitalize;
+}
+
+button {
+  padding-top: 32px;
+  background-color: #C99E71;
+  font-size: 18px
+  ;
 }
