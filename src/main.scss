@@ -273,10 +273,6 @@ button {
   font-size: 18px;
 }
 
-.slider__item {
-  
-}
-
 .test_with_img {
   padding-bottom: 28px;
   display: flex;
@@ -333,4 +329,18 @@ button {
   padding-left: 40px;
   padding-right: 40px;
   padding-top: 40px;
+  width: 565px;
+  margin-right: 40px;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slider__item {
+  display: flex;
 }
