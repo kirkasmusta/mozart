@@ -330,7 +330,6 @@ button {
   padding-right: 40px;
   padding-top: 40px;
   width: 565px;
-  margin-right: 40px;
 }
 
 .slick-track {
@@ -343,4 +342,49 @@ button {
 
 .slider__item {
   display: flex;
+}
+
+.with_btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slick-arrow {
+  font-size: 0;
+}
+
+.with_booking {
+  display: flex;
+}
+
+.map {
+  width: 50%;
+}
+
+.booking {
+  background-color: #1C1814;
+  padding-left: 48px;
+  padding-right: 48px;
+  padding-top: 72px;
+  width: 50%;
+}
+
+.field {
+  padding-bottom: 24px;
+}
+
+input {
+  background: #14110E;
+  padding-left: 20px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-size: 18px;
+  color: rgba(255,255,255,0.8);
+  display: block; 
+  width: 100%;
+}
+
+.map-btn {
+  display: flex;
+  justify-content: center;
 }
