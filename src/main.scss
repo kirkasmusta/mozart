@@ -388,3 +388,43 @@ input {
   display: flex;
   justify-content: center;
 }
+
+.news_txt {
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.news_by {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 16px;
+  font-size: 18px;
+}
+
+.news_by span {
+  color: #C99E71;
+}
+
+.cockt {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 150%;
+  text-transform: capitalize;
+  padding-bottom: 33px;
+}
+
+.more {
+  font-family: Urbanist;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #C99E71;
+  padding-bottom: 28px;
+}
+
+.three_column_news {
+  background-color: #1C1814;
+}
