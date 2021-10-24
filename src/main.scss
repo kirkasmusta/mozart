@@ -273,13 +273,8 @@ button {
   font-size: 18px;
 }
 
-.testimonial {
-  background-color: #1C1814;
-  display: flex;
-  flex-direction: column;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 40px;
+.slider__item {
+  
 }
 
 .test_with_img {
@@ -317,4 +312,25 @@ button {
 
 .fas {
   color: #FAA61A;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slider {
+  min-width: 0;
+}
+
+.gh {
+  background-color: #1C1814;
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 40px;
 }
