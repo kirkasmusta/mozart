@@ -273,3 +273,48 @@ button {
   font-size: 18px;
 }
 
+.testimonial {
+  background-color: #1C1814;
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 40px;
+}
+
+.test_with_img {
+  padding-bottom: 28px;
+  display: flex;
+}
+
+.test_with_img img {
+  padding-right: 24px;
+}
+
+.test_with_star p {
+  font-size: 18px;
+  padding-bottom: 4px;
+}
+
+.with_star {
+  display: flex;
+  justify-content: space-between;
+}
+
+.with_star p{
+  font-size: 14px;
+  color: rgba(255,255,255,0.5);
+}
+
+.test_txt {
+  color: rgba(255,255,255,0.8);
+  font-size: 16px;
+}
+
+.test_star {
+  padding-bottom: 40px;
+}
+
+.fas {
+  color: #FAA61A;
+}
