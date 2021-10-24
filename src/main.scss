@@ -240,7 +240,7 @@ button {
 
 .main_menu {
   display: flex;
-  justify-content: space-between;
+  width: 100%;
 }
 
 .menu_item {
@@ -249,5 +249,21 @@ button {
   border: 1px solid #32323D;
   padding: 24px;
   align-items: center;
+  margin-bottom: 36px;
 }
 
+.menu {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.menu:first-child {
+  padding-right: 40px;
+}
+
+.menu-item  {
+  color: #C99E71;
+  font-size: 18px;
+}
