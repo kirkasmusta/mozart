@@ -195,14 +195,14 @@ button {
   color: #C99E71;
 }
 
-.popular {
+.chapter {
   font-size: 18px;
   color: #C99E71;
   text-align: center;
   padding-bottom: 12px;
 }
 
-.popular_coffee {
+.chapter_title {
   font-size: 48px;
   text-align: center;
   padding-bottom: 56px;
@@ -250,6 +250,11 @@ button {
   padding: 24px;
   align-items: center;
   margin-bottom: 36px;
+  font-size: 24px;
+}
+
+.menu_item:last-child {
+  margin-bottom: 0;
 }
 
 .menu {
@@ -263,7 +268,8 @@ button {
   padding-right: 40px;
 }
 
-.menu-item  {
+.menu_item span {
   color: #C99E71;
   font-size: 18px;
 }
+
