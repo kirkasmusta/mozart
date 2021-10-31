@@ -1,3 +1,5 @@
+
+
 * {
   box-sizing: border-box;
   max-width: 1920px;
@@ -31,8 +33,6 @@ body {
   align-items: center;
   color: #FFFFFF;
   font-family: Inter;
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 22px;
   height: 125px;
@@ -46,9 +46,22 @@ ul {
   flex-direction: row ;
 }
 
+ul:first-child {
+  padding-left: 0;
+}
+
+li:last-child {
+  padding-right: 0;
+}
+
 li {
   list-style-type: none;
   padding-right: 48px;
+}
+
+li:hover {
+  font-weight: bold;
+  color: #C99E71;
 }
 
 .with_bg {
@@ -71,16 +84,22 @@ li {
   flex-direction: column;
   align-items: flex-start;
   width: 529px;
+  padding-bottom: 40px;
 }
 
 .slogan1 {
-  font-size: 67px;
+  font-family: Righteous;
+  font-size: 72px;
+  line-height: 130%;
+  padding-bottom: 32px;
 }
 
 .slogan2 {
-  padding: 32px 0;
-  font-size: 19px;
+  font-family: Urbanist;
+  font-size: 20px;
+  line-height: 180%;
   text-transform: capitalize;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .button {
@@ -90,10 +109,13 @@ li {
 
 button {
   background-color: #C99E71;
-  font-size: 18px;
   padding: 24px 40px;
   margin-top: 32px;
   text-transform: uppercase;
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
 }
 
 .video {
@@ -115,6 +137,10 @@ button {
 .video p {
   margin-top: 20px;
   margin-bottom: 0;
+  font-family: Inter;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
 }
 
 .process {
@@ -130,6 +156,8 @@ button {
 .three_column_txt {
   font-size: 24px;
   padding-bottom: 24px;
+  font-family: Righteous;
+  color: #FFFFFF;
 }
 
 .three_column_txt span {
@@ -156,17 +184,26 @@ button {
 
 .txt {
   color: #C99E71;
-  font-size: 18px;
   padding-bottom: 12px;
+  font-family: Urbanist;
+  font-weight: 600;
+  font-size: 18px;
 }
 
 .txt2 {
   font-size: 48px;
   padding-bottom: 36px;
+  font-family: Righteous;
+  line-height: 130%;
 }
 
 .txt3 {
+  font-family: Urbanist;
+  font-weight: 500;
   font-size: 16px;
+  line-height: 180%;
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .three_column_product {
@@ -185,16 +222,30 @@ button {
   font-size: 16px;
   padding-top: 37px;
   padding-bottom: 20px;
+  font-family: Urbanist;
+  font-weight: 500;
+  line-height: 19px;
+  text-transform: uppercase;
 }
 
 .type_coffee {
   font-size: 24px;
   padding-bottom: 20px;
+  font-family: Righteous;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 30px;
+  text-transform: uppercase;
 }
 
 .price {
   font-size: 18px;
   padding-bottom: 40px;
+  font-family: Urbanist;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  text-transform: uppercase;
 }
 
 .price span {
@@ -206,12 +257,17 @@ button {
   color: #C99E71;
   text-align: center;
   padding-bottom: 12px;
+  font-family: Urbanist;
+  font-weight: 600;
+  line-height: 22px;
 }
 
 .chapter_title {
   font-size: 48px;
   text-align: center;
   padding-bottom: 56px;
+  font-family: Righteous;
+  line-height: 130%;
 }
 
 .btn_product {
@@ -233,17 +289,6 @@ button {
   padding-right: 80px;
 }
 
-.machine_txt_logo {
-  font-size: 48px;
-}
-
-.machine_txt_about {
-  font-size: 16px;
-  padding-top: 36px;
-  padding-bottom: 4px;
-  text-transform: capitalize;
-}
-
 .main_menu {
   display: flex;
   width: 100%;
@@ -256,7 +301,11 @@ button {
   padding: 24px;
   align-items: center;
   margin-bottom: 36px;
+  font-family: Righteous;
+  font-style: normal;
+  font-weight: normal;
   font-size: 24px;
+  line-height: 30px;
 }
 
 .menu_item:last-child {
@@ -277,6 +326,11 @@ button {
 .menu_item span {
   color: #C99E71;
   font-size: 18px;
+  font-family: Urbanist;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  text-align: right;
 }
 
 .test_with_img {
@@ -291,6 +345,10 @@ button {
 .test_with_star p {
   font-size: 18px;
   padding-bottom: 4px;
+  font-family: Urbanist;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
 }
 
 .with_star {
@@ -300,12 +358,12 @@ button {
 
 .with_star p{
   font-size: 14px;
-  color: rgba(255,255,255,0.5);
-}
-
-.test_txt {
-  color: rgba(255,255,255,0.8);
-  font-size: 16px;
+  font-family: Urbanist;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 180%;
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .test_star {
@@ -408,6 +466,10 @@ input {
   justify-content: space-between;
   padding-bottom: 16px;
   font-size: 18px;
+  font-family: Urbanist;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
 }
 
 .news_by span {
@@ -415,12 +477,13 @@ input {
 }
 
 .cockt {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 150%;
   text-transform: capitalize;
   padding-bottom: 33px;
+  font-family: Urbanist;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
 }
 
 .more {
@@ -442,17 +505,29 @@ footer {
   align-items: center;
   justify-content: space-between;
   padding-bottom: 72px;
+  font-family: Urbanist;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
 }
 
 .search-input input{
   border-radius: 25px;
   border: 1px solid #1C1814;
   background-color: #1C1814;
+  font-family: Urbanist;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 180%;
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .search-input {
   display:inline-block;
-        position: relative;
+  position: relative;
 }
 
 .search-input:after {
