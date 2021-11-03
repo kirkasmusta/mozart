@@ -553,3 +553,30 @@ footer {
   padding-top: 33px;
   padding-bottom: 32px;
 }
+
+.add {
+  display: none;
+}
+
+.three_column_product:hover .add {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  font-family: Urbanist;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: none;
+  padding: 13px 20px;
+}
+
+.three_column_product:hover .type_coffee {
+  padding-top: 36px;
+  padding-bottom: 38px;
+}
+
+.three_column_product:hover .txt_cof,
+.three_column_product:hover .price {
+  display: none;
+}
