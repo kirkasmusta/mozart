@@ -363,6 +363,7 @@ button {
 
 .slick-track {
   display: flex;
+  margin-bottom: 56px;
 }
 
 .slider {
@@ -381,31 +382,43 @@ button {
   margin-left: 40px;
 }
 
-.slick-track {
-  display: flex;
-}
-
-.slick-list {
-  overflow: hidden;
-}
-
 .slider__item {
   display: flex;
 }
 
 .with_btn {
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
 }
 
 .slick-arrow {
   font-size: 0;
+  margin-top: -20px;
+  padding: 15px 20px 10px;
+  border: 1px solid #121315;
+  background-color: #121315;
+  border-radius: 50px;
+
+  &:hover {
+    background-color: #C99E71;
+    color: black;
+  }
 }
 
-.slider .slick-arrow.slick-prev{
-  left: 0; // левая стрелка остается с левой стороны слайдера
-  background: url('../img/coffee/arrow-right.png') 0 0 / 100% no-repeat;
+.slick-arrow.slick-prev:before {
+  content: '\f060';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 20px;
 }
+
+.slick-arrow.slick-next:before {
+  content: '\f061';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 20px;
+}
+
 
 .with_booking {
   display: flex;
@@ -576,4 +589,21 @@ footer {
 .section3 {
   max-width: 1320px;
   margin: 0 auto;
+}
+
+.slick-current {
+  position: relative;
+
+  &:after {
+    content: attr(aria-label);
+    position: absolute;
+    bottom: -56px;
+    left: 40px;
+    color: #c99e71;  
+    font-family: Urbanist;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 135%;
+  }
 }
